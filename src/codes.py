@@ -32,8 +32,8 @@ pipe = Pipeline([
 pipe.fit(X_train, y_train_log)
 
 #FOR R^2
-R_SUARED = pipe.score(X_train, y_train_log)
-print(RR)
+rsquared = pipe.score(X_train, y_train_log)
+print(rsquared)
 
 predictions_log = pipe.predict(X_test)
 final_predictions = np.expm1(predictions_log)
@@ -70,7 +70,7 @@ plt.title('Actual vs. Predicted House Prices')
 plt.show()
 
 
-
+# ploting histogram of residuals
 residuals = y_test - final_predictions
 
 plt.figure(figsize=(10, 6))
@@ -79,7 +79,7 @@ plt.title('Distribution of Prediction Errors (Residuals)')
 plt.xlabel('Error ($)')
 plt.show()
 
-
+#ploting a regplot
 plt.figure(figsize=(10, 6))
 sns.regplot(x=y_test, y=final_predictions)
 plt.title('Residual Plot')
