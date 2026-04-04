@@ -31,9 +31,7 @@ pipe = Pipeline([
 
 pipe.fit(X_train, y_train_log)
 
-#FOR R^2
-rsquared = pipe.score(X_train, y_train_log)
-print(rsquared)
+
 
 predictions_log = pipe.predict(X_test)
 final_predictions = np.expm1(predictions_log)
