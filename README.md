@@ -24,16 +24,19 @@ Scikit-learn
 
 📂 Project Structure
 project/
+
 │── src/
 │   ├── data_cleaning.py   # Handles preprocessing and missing values
 │   ├── codes.py           # Model training, evaluation, and visualization
 │
+
 │── data/
 │   ├── train.csv
 │   ├── test.csv
 │   ├── train_2.csv        # Cleaned training data
 │   ├── test_2.csv         # Cleaned test data
 │
+
 │── README.md
 
 🧹 Data Cleaning Process (data_cleaning.py)
@@ -135,10 +138,13 @@ Feature selection helps reduce noise and improve generalization
 Proper handling of train/test separation is critical to avoid data leakage
 
 ▶️ How to Run
+
 Clone the repository
-git clone <your-repo-link>
+
+git clone https://github.com/gamernextdoor29/real-estate-scout-analysis
+
 Install dependencies
-pip install -r requirements.txt
+pip install pandas numpy scikit-learn matplotlib seaborn scipy
 Run data cleaning
 python src/data_cleaning.py
 Run model training
@@ -149,6 +155,8 @@ Try advanced models (Random Forest, XGBoost)
 Perform hyperparameter tuning
 Add cross-validation on full pipeline
 Deploy model as a web app (Flask/Streamlit)
+
 👤 Author
+Mueeb Bello
 
 Mujeeb Bello
