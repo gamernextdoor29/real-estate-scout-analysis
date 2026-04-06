@@ -24,20 +24,22 @@ Scikit-learn
 
 📂 Project Structure
 project/
+src/
+data_cleaning.py   # Handles preprocessing and missing values
+codes.py           # Model training, evaluation, and visualization
 
-│── src/
-│   ├── data_cleaning.py   # Handles preprocessing and missing values
-│   ├── codes.py           # Model training, evaluation, and visualization
-│
+data/
+train.csv
+test.csv
+train_2.csv        # Cleaned training data
+test_2.csv         # Cleaned test data
 
-│── data/
-│   ├── train.csv
-│   ├── test.csv
-│   ├── train_2.csv        # Cleaned training data
-│   ├── test_2.csv         # Cleaned test data
-│
+output/
+scatterplot
+residualplot
+histplot
 
-│── README.md
+README.md
 
 🧹 Data Cleaning Process (data_cleaning.py)
 1. Duplicate Check
