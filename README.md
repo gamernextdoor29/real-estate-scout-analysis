@@ -23,6 +23,7 @@ Matplotlib & Seaborn
 Scikit-learn
 
 📂 Project Structure
+
 project/
 src/
 data_cleaning.py   # Handles preprocessing and missing values
